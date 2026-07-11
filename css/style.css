@@ -121,3 +121,7 @@ a:hover {
     color: #007bff;   /* or whichever color you prefer */
     transform: translateY(-2px); /* subtle lift effect */
 }
+
+.bio {
+    font-size: large;
+}

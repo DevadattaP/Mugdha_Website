@@ -1,6 +1,21 @@
-[
+[  
     {
-        "title": "Teaching assistant for the course MTH102 (Linear algebra)",
+        "title": "Teaching assistant at the [Summer School for Women in Mathematics and Statistics (SWMS) 2026](https://www.icts.res.in/program/swms2026)",
+        "organization": "ICTS Bangalore",
+        "dates": "June 2026"
+    }, 
+    {
+        "title": "Mentor in the [MTTS summer camp 2026](https://mtts.org.in/programme/mtts2026)",
+        "organization": "KIIT, Bhubaneswar",
+        "dates": "May 2026"
+    },
+    {
+        "title": "Teaching assistant for the course MTH404 (Measure and Integration)",
+        "organization": "IISER Bhopal",
+        "dates": "January 2026 – April 2026"
+    },
+    {
+        "title": "Teaching assistant for the course MTH102 (Linear Algebra)",
         "organization": "IISER Bhopal",
         "dates": "September 2025 – December 2025"
     },
@@ -16,12 +31,12 @@
         "dates": "June 2025"
     },
     {
-        "title": "Teaching assistant for the course MTH102 (Linear algebra)",
+        "title": "Teaching assistant for the course MTH102 (Linear Algebra)",
         "organization": "IISER Bhopal",
         "dates": "August 2024 – November 2024"
     },
     {
-        "title": "Mentor in the [Online Foundation Course in Mathematics (OFCM)](https://mtts.org.in/programme/ofcm2023)",
+        "title": "Mentor in the [Online Foundation Course in Mathematics (OFCM) 2023](https://mtts.org.in/programme/ofcm2023)",
         "organization": "Organized by the MTTS Trust",
         "dates": "August 2023"
     }

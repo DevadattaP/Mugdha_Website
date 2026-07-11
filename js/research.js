@@ -25,10 +25,7 @@ async function loadResearchPapers() {
 
             html += `
                 <li class="list-group-item shadow mb-2 rounded">
-                    ${authors}${authors ? "," : ""}
-                    <i>${title}</i>
-                    ${url ? `, Available at <a href="${url}" target="_blank">${url}</a>` : ""}
-                    ${year ? `, ${year}` : ""}.
+                    ${authors}${authors ? "," : ""} <i>${title}</i>${url ? `, Available at <a href="${url}" target="_blank">${url}</a>` : ""}${year ? `, ${year}` : ""}.
                 </li>
             `;
         });
