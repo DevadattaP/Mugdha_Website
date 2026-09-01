@@ -31,6 +31,7 @@ async function loadTalks() {
             li.innerHTML = `
                 ${talk.title},
                 ${eventHTML},
+                ${talk.location},
                 ${talk.date}
                 <span>&nbsp;&nbsp;</span>
                 ${
@@ -73,6 +74,7 @@ async function loadPosters() {
             li.innerHTML = `
                 ${poster.title},
                 ${eventHTML},
+                ${poster.location},
                 ${poster.date}
                 <span>&nbsp;&nbsp;</span>
                 ${
