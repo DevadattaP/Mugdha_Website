@@ -13,9 +13,10 @@ async function loadResearchPapers() {
         // Parse BibTeX entries
         const entries = parseBibTeX(bibText);
 
+        const renderEntries = list => {
         let html = "";
         let previousAuthors = "";
-        entries.forEach(entry => {
+        list.forEach(entry => {
             const authors = formatAuthors(entry.author || "");
             const displayAuthors = authors && authors === previousAuthors ? `<span style="display:inline-block;width:3em;border-bottom:1px solid currentColor;"></span> ` : authors;
             previousAuthors = authors;
@@ -58,8 +59,24 @@ async function loadResearchPapers() {
                 `;
             }
         });
+        return html;
+        };
 
-        container.innerHTML = html;
+        const sections = [
+            { heading: "Publications", items: entries.filter(e => e.type === "article") },
+            { heading: "Preprints", items: entries.filter(e => e.type === "misc") }
+        ];
+
+        container.innerHTML = sections
+            .filter(s => s.items.length)
+            .map(s => `
+                <div class="container mt-5">
+                    <h2 class="text-center mb-4">${s.heading}</h2>
+                    <div class="d-flex justify-content-center">
+                        <ul class="list-group list-group-flush d-inline-block">${renderEntries(s.items)}</ul>
+                    </div>
+                </div>`)
+            .join("");
 
     } catch (err) {
         console.error("Error loading BibTeX:", err);
