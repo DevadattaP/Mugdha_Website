@@ -1,5 +1,11 @@
 [
     {
+        "title": "An introduction to graphons",
+        "event": "Department seminar",
+        "location":"IISER Bhopal",
+        "date": "10th September, 2026"
+    },
+    {
         "title": "Graphs, graphons, and their eigenvalues",
         "event": "[Summer School for Women in Mathematics and Statistics (SWMS) 2026](https://www.icts.res.in/program/swms2026)",
         "location": "ICTS Bangalore",

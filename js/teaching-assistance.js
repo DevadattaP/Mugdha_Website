@@ -10,19 +10,19 @@ async function loadTeachingAssistance() {
         container.innerHTML = "";
 
         items.forEach(item => {
-            const col = document.createElement("div");
-            col.className = "col";
+            const card = document.createElement("div");
+            card.className = "card mb-1 shadow border-0";
 
-            col.innerHTML = `
-                <div class="bg-light rounded shadow p-4">
-                    <h5>${parseMarkdownLink(item.title)}</h5>
-                    <p class="mb-1">${item.organization}</p>
-                    ${item.extra ? `<p class="mb-1">${item.extra}</p>` : ""}
-                    <p class="mb-1">${item.dates}</p>
+            card.innerHTML = `
+                <div class="card-body">
+                    <h5 class="card-title">${parseMarkdownLink(item.title)}</h5>
+                    <p class="card-text" style="margin-bottom: 4px;">${item.organization}</p>
+                    ${item.extra ? `<p class="card-text" style="margin-bottom: 4px;">${item.extra}</p>` : ""}
+                    <p class="card-text">${item.dates}</p>
                 </div>
             `;
 
-            container.appendChild(col);
+            container.appendChild(card);
         });
 
     } catch (err) {
